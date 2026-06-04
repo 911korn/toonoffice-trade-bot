@@ -1,0 +1,19 @@
+{
+  "name": "banpuen-trade-bot",
+  "version": "1.0.0",
+  "description": "A zero-dependency trading bot: backtest + paper trading with SMA crossover and RSI filter.",
+  "type": "module",
+  "bin": {
+    "banpuen-bot": "./cli.js"
+  },
+  "scripts": {
+    "backtest": "node cli.js backtest",
+    "paper": "node cli.js paper",
+    "demo": "node cli.js backtest --symbol DEMO --bars 400",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
